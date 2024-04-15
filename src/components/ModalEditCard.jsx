@@ -202,10 +202,11 @@ export const ModalEditCard = ({
               </select>
             </div>
           </div>
-        </form>
-        <div className="selector-btn">
           <button> Изменить</button>
-        </div>
+        </form>
+        {/* <div className="selector-btn">
+          <button> Изменить</button>
+        </div> */}
       </div>
     </div>
   );
