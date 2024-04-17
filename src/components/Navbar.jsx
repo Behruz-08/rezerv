@@ -31,6 +31,8 @@ import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import ChatIcon from "@mui/icons-material/Chat";
 
+import rosd from "../assets/png/road.png";
+
 export const Navbar = () => {
   // OPEN AND CLOSE THE SUB MENU
   const [open, setOpen] = useState(false);
@@ -118,7 +120,12 @@ export const Navbar = () => {
     <>
       <header className="header" ref={refOne}>
         <div className="logo" onClick={onLogoClick}>
-          HaMsAfAr
+          <div className="logo-item">
+            <span>
+              <img src={rosd} alt="" />
+            </span>
+            <p>HaMsAfAr</p>
+          </div>
         </div>
         <nav className="main-nav">
           <ul className="main-nav-list">
