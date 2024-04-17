@@ -12,7 +12,8 @@
   margin-bottom: $gutter-horizontal-small;
 
   .logo {
-    color: $color-primary-dark;
+    // color: $color-primary-dark;
+    color: $color-primary-light-3;
     font-size: 2.4rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -20,9 +21,16 @@
     transition: all 0.1s ease-in-out;
 
     &:hover {
-      // color: $color-hover-text-link;
-      color: $color-primary-light-3;
+      color: $color-hover-text-link;
     }
+    img {
+      width: 6rem;
+      height: 3rem;
+    }
+  }
+  .logo-item {
+    display: flex;
+    gap: 2rem;
   }
 
   .main-nav-list {

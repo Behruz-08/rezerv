@@ -78,6 +78,7 @@ export const PublishCard = ({
   } = post;
 
   const handleSelect = async (userId, userName, userPhoto) => {
+    console.log(userId);
     //check whether the group(chats in firestore) exists, if not create
     const combinedId =
       currentUser.uid > userId
@@ -109,6 +110,7 @@ export const PublishCard = ({
           },
           [combinedId + ".date"]: serverTimestamp(),
         });
+        // navigate(`/chat/${userId}`);
       }
     } catch (err) {}
   };
@@ -244,7 +246,7 @@ export const PublishCard = ({
                 } else if (currentUser.uid !== userId) {
                   handleSelect(userId, userName, photoURL);
                   setTimeout(() => {
-                    navigate("/chat");
+                    navigate(`/chat:userId`);
                   }, 1000);
                 } else if (currentUser.uid === userId) {
                   setErrorText(

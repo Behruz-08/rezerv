@@ -15,10 +15,8 @@ import { UserProfile } from "../../pages/UserProfile";
 import { Chat } from "../../pages/Chat";
 import { ErrorPage } from "../../pages/ErrorPage";
 
-
-const AppRouter = ()=>(
-
-    <Routes>
+const AppRouter = () => (
+  <Routes>
     <Route path="/">
       <Route path={ROUTES.HOME} element={<Home />} />
       <Route path={ROUTES.REGISTER} element={<Register />} />
@@ -38,7 +36,6 @@ const AppRouter = ()=>(
       <Route path="*" element={<ErrorPage />} />
     </Route>
   </Routes>
-)
+);
 
-
-export default AppRouter
+export default AppRouter;
